@@ -6,6 +6,7 @@
 1. node.jsをインストール
 2. npx create-react-app プロジェクト名 でreactの雛形を作成
 3. npm start でローカル環境型が立ち上がったことを確認することができる
+4. npm install uuid でキーのランダム発行、利用により重複を避ける実装を行う。
 
 ## 開発効率
 1. xxxx.jsx でコンポーネントを作成する際、
@@ -22,6 +23,10 @@
 
     const [todos, setTodo] = useState(["Todo1", "Todo2"]);  
     
-    のように引数を渡し、todosに格納できる。    
+    のように引数を渡し、todosに格納できる  
+2. useRef:文字列など要素を取得することができるフックス。
+3. filter関数　条件にあうものだけを取り出す。　　
+    例：todos.filter((todo) => !todo.completed).length}  
+    todo.completedがfalseなものがtrueなため、取り出される
 
 
